@@ -15,7 +15,7 @@ Download the latest version archive
     tar xvjf automatic_addressbook-latest.tar.bz2
     mv automatic_addressbook <path_to_roundcube>/plugins/
 
-2. Execute the relevant SQL/<db engine>.initial.sql script on your database (process depends on your DB engine)
+2. Execute the relevant SQL/<db engine>.initial.sql script on your database (process depends on your DB engine) by first inserting the table prefix in agree with the one in your $config['db_prefix'];
 
 3. Add "automatic_addressbook" to the plugins list in
    <path_to_roundcube>/config/main.inc.php or <path_to_roundcube>/config/config.inc.php depending on your roundcube version, for example :
